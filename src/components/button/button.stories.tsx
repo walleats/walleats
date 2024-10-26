@@ -54,3 +54,18 @@ export const Small: Story = {
   render: Template,
   args: { label: 'Small Button', variant: 'default', state: 'default', size: 'small' },
 };
+
+export const XSmall: Story = {
+  render: Template,
+  args: { label: 'XSmall', variant: 'default', state: 'default', size: 'xsmall' },
+};
+
+export const Component: Story = {
+  render: Template,
+  args: { label: 'Component Button', variant: 'default', state: 'default', size: 'component' },
+};
+
+export const ComponentSmall: Story = {
+  render: Template,
+  args: { label: 'Component Small Button', variant: 'default', state: 'default', size: 'componentSmall' },
+};

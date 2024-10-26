@@ -4,7 +4,7 @@ import { Spinner } from '../loaders/Spinner';
 export interface ButtonProps {
   variant?: 'default' | 'outlined' | 'text';
   state?: 'default' | 'disabled' | 'pressed' | 'loading';
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'xsmall' | 'component' | 'componentSmall';
   label: string;
   onClick?: () => void;
 }
@@ -18,9 +18,12 @@ export const Button = ({
 }: ButtonProps) => {
   const baseStyle = 'rounded-lg transition-all ease-in-out duration-150 h-[47px]';
   const sizeStyles = {
-    small: 'w-[255px]',
-    medium: 'w-[352px]',
-    large: 'w-[398px]',
+    small: 'w-[255px] text-h5 font-medium',
+    medium: 'w-[352px] text-h5 font-medium',
+    large: 'w-[398px] text-h5 font-medium',
+    component: 'w-[144px] h-[44px] text-body font-medium',
+    componentSmall: 'w-[134px] h-[44px] text-body font-medium',
+    xsmall: 'w-[87px] h-[24px] text-button font-medium', 
   };
 
   const variantStyles = {
