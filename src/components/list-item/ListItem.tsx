@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 
-
 export interface ListItemProps {
   imageShape: 'rounded' | 'square';
   icon: ReactNode;
@@ -20,18 +19,22 @@ export const ListItem = ({
 }: ListItemProps) => {
   return (
     <div
-      className="flex items-center justify-between w-full p-4 border-b border-neutral-200"
+      className="flex items-center justify-between w-full p-2 border bg-secondary-200 h-[70px] min-w-[343px] border-background-700 rounded-lg"
       onClick={onClick}
     >
       <div className="flex items-center space-x-4">
         <div
-          className={`flex-shrink-0 w-12 h-12 ${imageShape === 'rounded' ? 'rounded-full' : 'rounded-lg'}`}
+          className={`flex items-center justify-center w-[50px] h-[50px] overflow-hidden border border-text-950 ${
+            imageShape === 'rounded' ? 'rounded-full' : 'rounded-md'
+          }`}
         >
-          {icon}
+          <div className="w-full h-full flex items-center justify-center">
+            {icon}
+          </div>
         </div>
-        <div>
-          <h3 className="text-h5 font-medium text-text-900">{title}</h3>
-          {subtitle && <p className="text-body text-text-400">{subtitle}</p>}
+        <div className="ml-2">
+          <h3 className="text-h6 font-bold text-text-500">{title}</h3>
+          {subtitle && <p className="text-h6 font-medium text-text-400">{subtitle}</p>}
         </div>
       </div>
       {submitIcon}
