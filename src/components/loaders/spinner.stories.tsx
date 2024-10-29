@@ -22,27 +22,24 @@ type Story = StoryObj<typeof Spinner>;
 export const Small: Story = {
   args: {
     size: 'small',
-    color: 'primary-500',
   },
 };
 
 export const Medium: Story = {
   args: {
     size: 'medium',
-    color: 'primary-500',
   },
 };
 
 export const Large: Story = {
   args: {
     size: 'large',
-    color: 'primary-500',
   },
 };
 
 export const CustomColor: Story = {
   args: {
     size: 'medium',
-    color: 'success-500',
+    color: 'green',
   },
 };

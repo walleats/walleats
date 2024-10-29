@@ -54,7 +54,7 @@ export const Button = ({
       disabled={state === 'disabled' || state === 'loading'}
       {...props}
     >
-      {state === 'loading' ? <Spinner size='small'/> : label}
+      {state === 'loading' ? <Spinner size='small' color='white'/> : label}
     </button>
   );
 };
