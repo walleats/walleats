@@ -31,7 +31,7 @@ export const Button = ({
       default: 'bg-primary-500 text-text-50',
       disabled: 'bg-neutral-300 text-text-400',
       pressed: 'bg-primary-600 text-text-50',
-      loading: 'bg-primary-300 flex items-center justify-center',
+      loading: 'bg-primary-400 flex items-center justify-center',
     },
     outlined: {
       default: 'bg-transparent border-2 border-primary-500 text-text-950',
