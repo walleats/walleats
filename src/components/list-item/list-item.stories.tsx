@@ -24,3 +24,25 @@ export const Rounded: Story = {
     submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
+
+export const Square: Story = {
+  render: Template,
+  args: {
+    imageShape: 'square',
+    icon: <Icon url={icons.ingredient} altText="food" size="large" />,
+    title: 'Square',
+    subtitle: 'This is a square image',
+    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
+  },
+};
+
+
+export const NoRightIconAndSubtitle: Story = {
+  render: Template,
+  args: {
+    imageShape: 'rounded',
+    icon: <Icon url={icons.food} altText="food" size="large" />,
+    title: 'No Right Icon',
+  },
+};
+

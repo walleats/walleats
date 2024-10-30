@@ -10,7 +10,7 @@ export const icons = {
   fire: `${basePath}/fire.svg`,
   food: `${basePath}/food.svg`,
   heart: `${basePath}/heart.svg`,
-  ingredients: `${basePath}/ingredients.svg`,
+  ingredient: `${basePath}/ingredient.svg`,
   meat: `${basePath}/meat.svg`,
   motorcycle: `${basePath}/motorcycle.svg`,
   order: `${basePath}/order.svg`,
