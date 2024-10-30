@@ -2,12 +2,12 @@ import Image from 'next/image';
 import React from 'react';
 
 interface IconProps {
-  url: string;
+  icon: string;
   altText?: string;
   size?: 'small' | 'medium' | 'large';
 }
 
-export const Icon: React.FC<IconProps> = ({ url, altText = 'icon', size = 'medium' }) => {
+export const Icon: React.FC<IconProps> = ({ icon, altText = 'icon', size = 'medium' }) => {
   const sizes = {
     small: 16,
     medium: 24,
@@ -17,7 +17,7 @@ export const Icon: React.FC<IconProps> = ({ url, altText = 'icon', size = 'mediu
   return (
     <div className="flex items-center justify-center" style={{ width: sizes[size], height: sizes[size] }}>
       <Image 
-        src={url} 
+        src={icon} 
         alt={altText} 
         width={sizes[size]} 
         height={sizes[size]} 

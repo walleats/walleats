@@ -20,10 +20,10 @@ export const Rounded: Story = {
   render: Template,
   args: {
     imageShape: 'rounded',
-    icon: <Icon url={icons.food} altText="food" size="large" />,
+    icon: <Icon icon={icons.food} altText="food" size="large" />,
     title: 'Rounded',
     subtitle: 'This is a rounded image',
-    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
+    submitIcon: <Icon icon={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
 
@@ -31,10 +31,10 @@ export const Square: Story = {
   render: Template,
   args: {
     imageShape: 'square',
-    icon: <Icon url={icons.ingredient} altText="food" size="large" />,
+    icon: <Icon icon={icons.ingredient} altText="food" size="large" />,
     title: 'Square',
     subtitle: 'This is a square image',
-    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
+    submitIcon: <Icon icon={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
 
@@ -43,7 +43,7 @@ export const NoRightIconAndSubtitle: Story = {
   render: Template,
   args: {
     imageShape: 'rounded',
-    icon: <Icon url={icons.food} altText="food" size="large" />,
+    icon: <Icon icon={icons.food} altText="food" size="large" />,
     title: 'No Right Icon',
   },
 };
@@ -64,7 +64,7 @@ export const WithImage: Story = {
     ),
     title: 'With Image',
     subtitle: 'This is an image',
-    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
+    submitIcon: <Icon icon={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
 
