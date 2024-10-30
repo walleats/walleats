@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { NavBar } from "./NavBar";
-import { icons } from "@/constants/icons"; // Adjust the import according to your project structure
+import { icons } from "@/constants/icons"; 
 
 const metaNavBar: Meta = {
-  title: 'Example/NavBar',
+  title: 'NavBar',
   component: NavBar,
-  parameters: { layout: 'centered' },
+  parameters: { layout: 'fullscreen' },
 };
 
 export default metaNavBar;
@@ -19,13 +19,9 @@ const navItems = [
 ];
 
 export const Default: Story = {
-  render: () => <NavBar navItems={navItems} />,
-};
-
-export const WithCustomIcons: Story = {
   render: () => (
-    <NavBar
-      navItems={navItems}
-    />
+      <NavBar
+        navItems={navItems}
+      />
   ),
 };

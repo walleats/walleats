@@ -6,7 +6,7 @@ import { images } from '@/constants/images';
 import Image from 'next/image';
 
 const meta: Meta<ListItemProps> = {
-  title: 'Example/ListItem',
+  title: 'ListItem',
   component: ListItem,
   parameters: { layout: 'centered' },
 };
