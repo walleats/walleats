@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ListItem, ListItemProps } from './ListItem';
+import { icons } from '@/constants/icons';
+import { Icon } from '../icon/Icon';
 
 const meta: Meta<ListItemProps> = {
   title: 'Example/ListItem',
@@ -16,8 +18,9 @@ export const Rounded: Story = {
   render: Template,
   args: {
     imageShape: 'rounded',
-    icon: <img src="https://via.placeholder.com/150" alt="rounded" />,
+    icon: <Icon url={icons.food} altText="food" size="large" />,
     title: 'Rounded',
     subtitle: 'This is a rounded image',
+    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
