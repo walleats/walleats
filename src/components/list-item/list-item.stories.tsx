@@ -55,7 +55,7 @@ export const WithImage: Story = {
     icon: (
       <div className="relative w-full max-w-xs h-full max-h-xs overflow-hidden">
         <Image
-          src={images.foodSqaured}
+          src={images.foodLargeSqaured}
           alt="food"
           layout="fill"
           className="object-cover"

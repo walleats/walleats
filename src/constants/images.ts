@@ -1,6 +1,8 @@
 const basePath = '/images';
 export const images = {
-  foodLight: `${basePath}/stock-image.png`,
-  foodDark: `${basePath}/stock-image1.png`,
-  foodSqaured: `${basePath}/stock-image2.png`,
+  foodLarge: `${basePath}/stock-image.png`,
+  foodLargeDark: `${basePath}/stock-image1.png`,
+  foodLargeSqaured: `${basePath}/stock-image2.png`,
+  foodSmall: `${basePath}/food.png`,
+  mcdonalds: `${basePath}/mcdonalds.png`,
 } 

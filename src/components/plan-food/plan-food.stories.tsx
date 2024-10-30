@@ -18,7 +18,7 @@ export const Default: Story = {
   args: {
     title: 'Grilled Chicken Salad',
     description: 'Grilled chicken, mixed greens, cherry tomatoes, cucumbers, and balsamic vinaigrette',
-    image: images.foodDark,
+    image: images.foodLargeDark,
     onSubmit: () => console.log('submit'),
   },
 };
