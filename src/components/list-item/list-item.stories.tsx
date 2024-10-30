@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ListItem, ListItemProps } from './ListItem';
 import { icons } from '@/constants/icons';
 import { Icon } from '../icon/Icon';
+import { images } from '@/constants/images';
+import Image from 'next/image';
 
 const meta: Meta<ListItemProps> = {
   title: 'Example/ListItem',
@@ -43,6 +45,26 @@ export const NoRightIconAndSubtitle: Story = {
     imageShape: 'rounded',
     icon: <Icon url={icons.food} altText="food" size="large" />,
     title: 'No Right Icon',
+  },
+};
+
+export const WithImage: Story = {
+  render: Template,
+  args: {
+    imageShape: 'square',
+    icon: (
+      <div className="relative w-full max-w-xs h-full max-h-xs overflow-hidden">
+        <Image
+          src={images.foodSqaured}
+          alt="food"
+          layout="fill"
+          className="object-cover"
+        />
+      </div>
+    ),
+    title: 'With Image',
+    subtitle: 'This is an image',
+    submitIcon: <Icon url={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
 
