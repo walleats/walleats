@@ -1,21 +1,28 @@
 import Image from "next/image";
 import { Button } from "../button/Button";
+import { Quantity } from "../quantity/Quantity";
 
 export interface CartProduct {
   name: string;
   price: number;
   image: string;
   amount: number;
-  onRemove: () => void;
-  onAdd: () => void;
-  onSubtract: () => void;
 }
 export interface CartStoreProductsProps {
   storeName: string;
   products: CartProduct[];
+  onRemoveProduct: (product: CartProduct) => void;
+  onAddProduct: (product: CartProduct) => void;
+  onSubtractProduct: (product: CartProduct) => void;
 }
 
-export const CartStoreProducts: React.FC<CartStoreProductsProps> = ({ storeName, products }) => {
+export const CartStoreProducts: React.FC<CartStoreProductsProps> = ({
+  storeName,
+  products,
+  onRemoveProduct,
+  onAddProduct,
+  onSubtractProduct,
+}) => {
   return (
     <div className="flex flex-col bg-secondary-200 w-[380px] gap-1 p-[10px] rounded-md">
       <div className="text-text-500 rounded-md text-h3 font-bold py-1 px-2 bg-primary-300">{storeName}</div>
@@ -37,13 +44,13 @@ export const CartStoreProducts: React.FC<CartStoreProductsProps> = ({ storeName,
               label="Remove"
               variant="default"
               size="componentSmall"
-              onClick={product.onRemove}
+              onClick={() => onRemoveProduct(product)}
             />
-            <Button
-              label="missing component"
-              variant="default"
-              size="xsmall"
-              onClick={product.onSubtract}
+            <Quantity
+              value={product.amount}
+              add={() => onAddProduct(product)} 
+              subtract={() => onSubtractProduct(product)} 
+              size="small"
             />
           </div>
         </div>
