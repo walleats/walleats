@@ -27,4 +27,5 @@ export const icons = {
   share: `${basePath}/share.svg`,
   starFilled: `${basePath}/star-filled.svg`,
   starOutlined: `${basePath}/star-outlined.svg`,
+  trash: `${basePath}/trash.svg`,
 }

@@ -1,11 +1,13 @@
 import React from 'react';
 import { Spinner } from '../loaders/Spinner';
+import { Icon } from '../icon/Icon';
 
 export interface ButtonProps {
-  variant?: 'default' | 'outlined' | 'text';
+  variant?: 'default' | 'outlined' | 'text' | 'icon';
   state?: 'default' | 'disabled' | 'pressed' | 'loading';
   size?: 'small' | 'medium' | 'large' | 'xsmall' | 'component' | 'componentSmall';
-  label: string;
+  label?: string;
+  icon?: string;
   onClick?: () => void;
 }
 
@@ -14,9 +16,10 @@ export const Button = ({
   state = 'default',
   size = 'medium',
   label,
+  icon,
   ...props
 }: ButtonProps) => {
-  const baseStyle = 'rounded-lg transition-all ease-in-out duration-150 h-[47px]';
+  const baseStyle = 'rounded-lg transition-all ease-in-out duration-150';
   const sizeStyles = {
     small: 'w-[255px] text-h5 font-medium',
     medium: 'w-[352px] text-h5 font-medium',
@@ -24,6 +27,7 @@ export const Button = ({
     component: 'w-[144px] h-[44px] text-body font-medium',
     componentSmall: 'w-[134px] h-[44px] text-body font-medium',
     xsmall: 'w-[87px] h-[24px] text-button font-medium', 
+    icon: 'w-[35px] h-[35px] flex items-center justify-center',
   };
 
   const variantStyles = {
@@ -45,16 +49,32 @@ export const Button = ({
       pressed: 'bg-transparent border-transparent text-primary-600',
       loading: 'bg-transparent border-transparent flex items-center justify-center',
     },
+    icon: {
+      default: 'bg-primary-500 ', 
+      disabled: 'bg-neutral-300 ',
+      pressed: 'bg-primary-600 ',
+      loading: 'bg-primary-300',
+    },
   };
 
   return (
     <button
       type="button"
-      className={`${baseStyle} ${sizeStyles[size]} ${variantStyles[variant][state]}`}
+      className={`${baseStyle} ${sizeStyles[variant === 'icon' ? 'icon' : size]} ${variantStyles[variant][state]}`}
       disabled={state === 'disabled' || state === 'loading'}
       {...props}
     >
-      {state === 'loading' ? <Spinner size='small' color='white'/> : label}
+      {state === 'loading' ? (
+        <Spinner size="small" color="white" />
+      ) : variant === 'icon' && icon ? (
+        <Icon icon={icon} size="small" />
+      ) : (
+        <>
+          {label}
+        </>
+      )}
     </button>
   );
 };
+
+Button.displayName = "Button";

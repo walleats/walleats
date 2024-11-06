@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button, ButtonProps } from './Button';
+import { icons } from '@/constants/icons';
 
 const meta: Meta<ButtonProps> = {
   title: 'Button',
@@ -68,4 +69,9 @@ export const Component: Story = {
 export const ComponentSmall: Story = {
   render: Template,
   args: { label: 'Component Small Button', variant: 'default', state: 'default', size: 'componentSmall' },
+};
+
+export const IconButton: Story = {
+  render: Template,
+  args: { variant: 'icon', state: 'default', icon: icons.trash}, 
 };
