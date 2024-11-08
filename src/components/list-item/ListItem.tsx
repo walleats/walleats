@@ -19,7 +19,7 @@ export const ListItem = ({
 }: ListItemProps) => {
   return (
     <div
-      className="flex items-center justify-between w-full p-2 border bg-secondary-200 h-[70px] min-w-[343px] border-background-700 rounded-lg"
+      className="flex items-center justify-between w-full p-2 border bg-background-50 h-[70px] min-w-[343px] border-primary-500 rounded-lg"
       onClick={onClick}
     >
       <div className="flex items-center space-x-4">

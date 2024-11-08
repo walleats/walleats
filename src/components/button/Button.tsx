@@ -19,7 +19,7 @@ export const Button = ({
   icon,
   ...props
 }: ButtonProps) => {
-  const baseStyle = 'rounded-lg transition-all ease-in-out duration-150';
+  const baseStyle = 'h-[47px] rounded-lg transition-all ease-in-out duration-150';
   const sizeStyles = {
     small: 'w-[255px] text-h5 font-medium',
     medium: 'w-[352px] text-h5 font-medium',

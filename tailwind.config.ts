@@ -114,6 +114,7 @@ const config: Config = {
         light: "300",
         thin: "100",        
       },
+      
     },
   },
   plugins: [],
