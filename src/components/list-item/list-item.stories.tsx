@@ -4,6 +4,8 @@ import { icons } from '@/constants/icons';
 import { Icon } from '../icon/Icon';
 import { images } from '@/constants/images';
 import Image from 'next/image';
+import {Quantity} from "@/components/quantity/Quantity";
+import {Button} from "@/components/button/Button";
 
 const meta: Meta<ListItemProps> = {
   title: 'ListItem',
@@ -67,4 +69,29 @@ export const WithImage: Story = {
     submitIcon: <Icon icon={icons.arrowRight} altText="arrow right" size="small" />,
   },
 };
+
+
+
+export const WithButton: Story = {
+  render: Template,
+  args: {
+    imageShape: 'square',
+    icon: <Icon icon={icons.food} altText="food" size="large" />,
+    title: 'With Image',
+    subtitle: 'This is an image',
+    submitIcon: <Button label={"Some text"} size={"xsmall"}></Button> ,
+  },
+};
+
+export const WithQuantityButton: Story = {
+  render: Template,
+  args: {
+    imageShape: 'square',
+    icon: <Icon icon={icons.food} altText="food" size="large" />,
+    title: 'With Image',
+    subtitle: 'This is an image',
+    submitIcon: <Quantity value={1} add={() => {}} subtract={() => {}} size={"small"} />,
+  },
+};
+
 
