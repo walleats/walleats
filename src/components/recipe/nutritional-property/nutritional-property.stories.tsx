@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { NutritionalProperty,NutritionalPropertyProps } from './NutritionalPropery';
+import { NutritionalProperty,NutritionalPropertyProps } from './NutritionalProperty';
 import {icons} from "@/constants/icons";
 
 

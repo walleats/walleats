@@ -1,4 +1,4 @@
-import {NutritionalProperty, NutritionalPropertyProps} from "@/components/recipe/NutritionalPropery";
+import {NutritionalProperty, NutritionalPropertyProps} from "@/components/recipe/nutritional-property/NutritionalProperty";
 import React from "react";
 
 export interface NutritionalInfoProps {

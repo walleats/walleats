@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { RecipeReview } from './RecipeReview';
-import {RecipeDescriptionProps} from "@/components/recipe/RecipeDescription";
+import {RecipeDescriptionProps} from "@/components/recipe/recipe-description/RecipeDescription";
 
 const meta: Meta<RecipeDescriptionProps> = {
     title: 'RecipeReview',
@@ -18,7 +18,7 @@ export const Default: Story = {
     args: {
         recipeDescription: {
             description: 'A delicious and healthy salad with grilled chicken.',
-            review: 3,
+            review: 1,
             reviews: 120,
             time: 30,
         },
@@ -26,18 +26,7 @@ export const Default: Story = {
     },
 };
 
-export const NoReviewSelected: Story = {
-    render: Template,
-    args: {
-        recipeDescription: {
-            description: 'A simple sandwich recipe with cheese and tomato.',
-            review: 0,
-            reviews: 50,
-            time: 15,
-        },
-        onClickReview: (rating: number) => console.log(`Review clicked: ${rating}`),
-    },
-};
+
 
 export const MaxReviewSelected: Story = {
     render: Template,

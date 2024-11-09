@@ -1,7 +1,7 @@
 import {Icon} from "@/components/icon/Icon";
 import {icons} from "@/constants/icons";
 import React from "react";
-import {RecipeReview} from "@/components/recipe/RecipeReview";
+import {RecipeReview} from "@/components/recipe/recipe-review/RecipeReview";
 
 export interface RecipeDescription {
     description:string,

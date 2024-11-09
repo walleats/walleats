@@ -1,4 +1,4 @@
-import {RecipeDescriptionProps} from "@/components/recipe/RecipeDescription";
+import {RecipeDescriptionProps} from "@/components/recipe/recipe-description/RecipeDescription";
 import {Icon} from "@/components/icon/Icon";
 import {icons} from "@/constants/icons";
 import {useState} from "react";
