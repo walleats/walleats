@@ -14,10 +14,10 @@ export const IngredientsList: React.FC<IngredientsListProps> = ({
     return (
         <div className="flex w-[378px] py-2 flex-col items-start gap-2">
             <div className="flex px-2 justify-between items-center self-stretch">
-                <span className="text-[#212121] font-poppins text-[24px] font-bold leading-[36px]">
+                <span className="text-text-950 font-poppins text-h4 font-bold leading-[36px]">
                     Ingredients
                 </span>
-                <Button label={"Add all to cart"} size={"componentSmall"} onClick={onClick}></Button>
+                <Button label={"Add all to cart"} size={"component"} onClick={onClick}></Button>
             </div>
             {itemProps.map((item, index) => (
                 <ListItem

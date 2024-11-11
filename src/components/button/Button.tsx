@@ -19,16 +19,17 @@ export const Button = ({
   icon,
   ...props
 }: ButtonProps) => {
-  const baseStyle = 'h-[47px] rounded-lg transition-all ease-in-out duration-150';
-  const sizeStyles = {
-    small: 'w-[255px] text-h5 font-medium',
-    medium: 'w-[352px] text-h5 font-medium',
-    large: 'w-[398px] text-h5 font-medium',
-    component: 'w-[144px] h-[44px] text-body font-medium',
-    componentSmall: 'w-[134px] h-[44px] text-body font-medium',
-    xsmall: 'w-[87px] h-[24px] text-button font-medium', 
-    icon: 'w-[45px] h-[45px] flex items-center justify-center',
-  };
+  const baseStyle = 'rounded-md transition-all ease-in-out duration-150';
+
+const sizeStyles = {
+  small: 'w-[255px] h-[47px] text-h5 font-medium',
+  medium: 'w-[352px] h-[47px] text-h5 font-medium',
+  large: 'w-[398px] h-[47px] text-h5 font-medium',
+  component: 'w-[144px] h-[44px] text-body font-medium',
+  componentSmall: 'w-[134px] h-[44px] text-body font-medium',
+  xsmall: 'w-[87px] h-[24px] text-button font-medium', 
+  icon: 'w-[45px] h-[45px] flex items-center justify-center',
+};
 
   const variantStyles = {
     default: {
