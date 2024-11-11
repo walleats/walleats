@@ -27,7 +27,7 @@ export const Button = ({
     component: 'w-[144px] h-[44px] text-body font-medium',
     componentSmall: 'w-[134px] h-[44px] text-body font-medium',
     xsmall: 'w-[87px] h-[24px] text-button font-medium', 
-    icon: 'w-[35px] h-[35px] flex items-center justify-center',
+    icon: 'w-[45px] h-[45px] flex items-center justify-center',
   };
 
   const variantStyles = {
@@ -67,7 +67,7 @@ export const Button = ({
       {state === 'loading' ? (
         <Spinner size="small" color="white" />
       ) : variant === 'icon' && icon ? (
-        <Icon icon={icon} size="small" />
+        <Icon icon={icon} size="medium" />
       ) : (
         <>
           {label}

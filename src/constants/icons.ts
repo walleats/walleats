@@ -8,7 +8,7 @@ export const icons = {
   check: `${basePath}/check.svg`,
   close: `${basePath}/close.svg`,
   clock: `${basePath}/clock.svg`,
-  error: `${basePath}/error.svg`,
+  warning: `${basePath}/warning.svg`,
   fire: `${basePath}/fire.svg`,
   food: `${basePath}/food.svg`,
   heart: `${basePath}/heart.svg`,
@@ -28,4 +28,5 @@ export const icons = {
   starFilled: `${basePath}/star-filled.svg`,
   starOutlined: `${basePath}/star-outlined.svg`,
   trash: `${basePath}/trash.svg`,
+  errorCircle: `${basePath}/error-circle.svg`
 }

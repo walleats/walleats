@@ -3,7 +3,7 @@ import { Notification, NotificationProps } from './Notification';
 
 
 const meta: Meta<NotificationProps> = {
-    title: 'Components/Notification',
+    title: 'Notification',
     component: Notification,
     parameters: { layout: 'centered' },
 };

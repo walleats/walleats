@@ -12,20 +12,20 @@ export const Notification: React.FC<NotificationProps> = ({
                                                               variant = 'success'
                                                           }) => {
     const colorStyle = {
-        success: "rounded-[10px] border-[3px] border-[#43A047] bg-[#FFF]",
-        error: "rounded-[10px] border-[3px] border-[#E53935] bg-[#FFF]",
-        warning: "rounded-[10px] border-[3px] border-[#FFA000] bg-[#FFF]"
+        success: "rounded-[10px] border-[3px] border-success-500 bg-background-50",
+        error: "rounded-[10px] border-[3px] border-error-500 bg-background-50",
+        warning: "rounded-[10px] border-[3px] border-warning-500 bg-background-50"
     };
 
     const iconType = {
         success: icons.check,
-        error: icons.close,
-        warning: icons.error
+        error: icons.errorCircle,
+        warning: icons.warning
     };
 
     const iconSize: { [key in 'success' | 'error' | 'warning']: 'small' | 'medium' | 'large' } = {
         success: 'medium',
-        error: 'small',
+        error: 'medium',
         warning: 'medium'
     };
 
@@ -34,7 +34,7 @@ export const Notification: React.FC<NotificationProps> = ({
             <div className="flex justify-between items-center flex-[1_0_0]">
                 <div className="flex items-center gap-2.5 w-[248.5px]">
                     <Icon icon={iconType[variant]} size={iconSize[variant]} />
-                    <span className="text-black font-poppins text-base font-medium leading-6">
+                    <span className="text-text-950 font-poppins text-base font-medium leading-6">
                         {message}
                     </span>
                 </div>

@@ -30,7 +30,7 @@ export const RecipeReview: React.FC<RecipeDescriptionProps> = ({
                     />
                 ))}
             </div>
-            <span className="flex justify-center items-end gap-[2px] text-[#212121] font-poppins text-[16px] font-normal leading-[24px]">
+            <span className="flex justify-center items-end gap-[2px] text-text-950 font-poppins text-h6 leading-[24px]">
                 {`(${recipeDescription.reviews} Reviews)`}
             </span>
         </div>

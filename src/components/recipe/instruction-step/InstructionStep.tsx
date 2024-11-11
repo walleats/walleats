@@ -16,8 +16,8 @@ export const InstructionStep: React.FC<InstructionStepProps> = ({
     const {stepNumber, stepName, stepDescription} = instructionStep;
     return (
         <div className="flex w-[362px] p-2 flex-col items-start gap-2 rounded-lg bg-white">
-            <div className="flex items-end gap-[3px] self-stretch">
-                <span className="text-[#212121] font-poppins text-[20px] font-bold leading-[30px]">
+            <div className="flex items-end gap-[1px] self-stretch">
+                <span className="text-text-950 font-poppins text-h5 font-bold leading-[30px]">
                     {stepNumber}
                 </span>
                 <div className="flex px-2 pb-2 items-end gap-2 self-stretch">
@@ -25,12 +25,12 @@ export const InstructionStep: React.FC<InstructionStepProps> = ({
                         <circle cx="4" cy="4.5" r="4"/>
                     </svg>
                 </div>
-                <span className="text-[#212121] font-poppins text-[20px] font-bold leading-[30px]">
+                <span className="text-text-950 font-poppins text-h5 font-bold leading-[30px]">
                     {stepName}
                 </span>
             </div>
             <div className="flex flex-col justify-center items-start gap-2 px-4 pb-2 self-stretch">
-                <span className="self-stretch text-[#636363] font-poppins text-[14px] font-normal leading-[21px]">
+                <span className="self-stretch text-text-400 font-poppins text-body font-normal leading-[21px]">
                     {stepDescription}
                 </span>
             </div>

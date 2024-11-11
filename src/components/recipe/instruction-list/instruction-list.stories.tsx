@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { InstructionList, InstructionListProps } from './InstructionList';
-import { InstructionStep } from "@/components/recipe/instruction-step/InstructionStep";
 
 
 const meta: Meta<InstructionListProps> = {
@@ -24,22 +23,22 @@ export const Default: Story = {
             instructions: [
                 {
                     stepNumber: 1,
-                    stepName: 'Step 1: Prepare Ingredients',
+                    stepName: 'Prepare Ingredients',
                     stepDescription: 'Gather all necessary ingredients for the recipe.',
                 },
                 {
                     stepNumber: 2,
-                    stepName: 'Step 2: Heat Pan',
+                    stepName: 'Heat Pan',
                     stepDescription: 'Heat the pan over medium heat before adding ingredients.',
                 },
                 {
                     stepNumber: 3,
-                    stepName: 'Step 3: Cook Ingredients',
+                    stepName: 'Cook Ingredients',
                     stepDescription: 'Add ingredients to the pan and cook for 10 minutes.',
                 },
                 {
                     stepNumber: 4,
-                    stepName: 'Step 4: Serve',
+                    stepName: 'Serve',
                     stepDescription: 'Once cooked, serve on a plate and garnish as needed.',
                 },
             ],

@@ -10,9 +10,9 @@ export const NutritionalProperty: React.FC<NutritionalPropertyProps> = ({
                                                                             propertyValue
                                                                         }) => {
     return (
-        <div className="flex p-2 items-center">
+        <div className="flex p-2 gap-1 items-center">
             <Icon icon={iconPath} size={"medium"}></Icon>
-            <span className="text-[#9E9E9E] font-poppins text-sm font-normal leading-[21px]">
+            <span className="text-text-400 font-poppins text-sm leading-[21px]">
                 {propertyValue}
             </span>
         </div>
