@@ -6,11 +6,12 @@ interface IconProps {
   icon: string;
   altText?: string;
   onClick?: () => void;
-  size?: 'small' | 'medium' | 'large';
+  size?: 'xsmall' | 'small' | 'medium' | 'large';
 }
 
 export const Icon: React.FC<IconProps> = ({ icon, altText = 'icon', size = 'medium' ,onClick}) => {
   const sizes = {
+    xsmall: 12,
     small: 16,
     medium: 24,
     large: 32,

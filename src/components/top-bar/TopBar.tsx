@@ -14,7 +14,7 @@ export interface TopBarProps {
 
 export const TopBar = ({
   title,
-  showBackButton = false,
+  showBackButton = true,
   onBackClick,
   showCartButton = true,
   onCartClick,
@@ -22,14 +22,14 @@ export const TopBar = ({
   onProfileClick,
 }: TopBarProps) => {
   return (
-    <div className="flex items-center justify-between w-[full] h-[41px] px-4 bg-background-50">
+    <div className="flex items-center justify-between w-full h-[41px] px-4 bg-background-50">
       {showBackButton && (
         <button
           type="button"
           onClick={onBackClick}
           className="flex items-center justify-center h-full"
         >
-          <Icon icon={icons.arrowLeft} size="small" />
+          <Icon icon={icons.arrowLeft} size="xsmall" />
         </button>
       )}
 
