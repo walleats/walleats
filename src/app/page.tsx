@@ -1,10 +1,14 @@
+import { FoodCarousel } from "@/components/food-carousel/FoodCarousel";
+import { FoodPlanCard } from "@/components/food-plan-card/FoodPlanCard";
+import { NavBar } from "@/components/navbar/NavBar";
 import { OptionCard } from "@/components/option-card/OptionCard";
 import { Top } from "@/components/top-bar/Top";
 import { images } from "@/constants/images";
+import { foodPlans, navItems, offerItems } from "@/constants/mocks";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-background-50 h-screen py-2">
+    <div className="flex flex-col bg-background-50 h-screen w-screen items-center py-2 gap-2 overflow-y-auto overflow-x-hidden">
       <Top
         topBarProps={{
           title: "Home",
@@ -14,17 +18,32 @@ export default function Home() {
           placeholder: "Search for products or restaurants",
         }}
       />
-      <div className="flex items-center justify-center space-x-4 mt-1">
-        <OptionCard
-          title="Food"
-          image={images.foodLargeDark}
-          />
 
-        <OptionCard
-          title="Ingredients"
-          image={images.foodLargeDark}
-          />
+      <div className="flex items-center justify-center space-x-4 mt-1">
+        <OptionCard title="Food" image={images.foodLargeDark} />
+        <OptionCard title="Ingredients" image={images.foodLargeDark} />
       </div>
+
+      <div className="flex flex-col justify-center px-6">
+        <div className="text-h3 text-text-950 font-bold">Today&apos;s Offers</div>
+        <FoodCarousel items={offerItems} />
+      </div>
+
+      <div className="flex flex-col justify-center px-6 mt-4 ml-[260px]">
+        <div className="text-h3 text-text-950 font-bold">Discover food plans</div>
+        <div className="flex overflow-x-auto gap-4 mt-2 pb-4">
+          {foodPlans.map((foodPlan, index) => (
+              <FoodPlanCard
+                key={index}
+                title={foodPlan.title}
+                tag={foodPlan.tag}
+                image={foodPlan.image}
+              />
+          ))}
+        </div>
+      </div>
+
+      <NavBar navItems={navItems} />
     </div>
   );
 }

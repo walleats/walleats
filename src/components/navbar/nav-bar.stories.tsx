@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { NavBar } from "./NavBar";
-import { icons } from "@/constants/icons"; 
+import { navItems } from "@/constants/mocks";
 
 const metaNavBar: Meta = {
   title: 'NavBar',
@@ -12,11 +12,6 @@ export default metaNavBar;
 
 type Story = StoryObj<typeof NavBar>;
 
-const navItems = [
-  { iconActive: icons.homeActive, iconInactive: icons.homeInactive },
-  { iconActive: icons.recipeActive, iconInactive: icons.recipeInactive },
-  { iconActive: icons.orderActive, iconInactive: icons.orderInactive },
-];
 
 export const Default: Story = {
   render: () => (

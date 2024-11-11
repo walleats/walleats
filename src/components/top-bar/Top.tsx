@@ -10,7 +10,7 @@ export interface TopProps {
 
 export const Top = ({ showSearchBar = true, topBarProps, searchProps }: TopProps) => {
   return (
-    <div className="flex flex-col px-2 py-2 gap-1">
+    <div className="flex flex-col px-2 py-2 w-full gap-1">
       <TopBar {...topBarProps} />
       {showSearchBar && searchProps && (
         <SearchBar {...searchProps} />
