@@ -4,6 +4,7 @@ export const icons = {
   homeActive: `${basePath}/home-active.svg`,
   homeInactive: `${basePath}/home-inactive.svg`,
   arrowRight: `${basePath}/arrow-right.svg`,
+  arrowLeft: `${basePath}/arrow-left.svg`,
   cart: `${basePath}/cart.svg`,
   check: `${basePath}/check.svg`,
   close: `${basePath}/close.svg`,
