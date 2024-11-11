@@ -5,32 +5,23 @@ import "./style/globals.css";
 const poppins = localFont({
   src: [
     {
-      path: "../fonts/Poppins-Regular.ttf",
-      weight: "400",
-      style: "normal",
+      path: '/fonts/poppins-medium-webfont.woff2',
+      weight: '500',
+      style: 'normal',
     },
     {
-      path: "../fonts/Poppins-Medium.ttf",
-      weight: "500",
-      style: "normal",
+      path: '/fonts/poppins-regular-webfont.woff2',
+      weight: '400',
+      style: 'normal',
     },
     {
-      path: "../fonts/Poppins-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../fonts/Poppins-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../fonts/Poppins-Thin.ttf",
-      weight: "100",
-      style: "normal",
+      path: '/fonts/poppins-bold-webfont.woff2',
+      weight: '700',
+      style: 'normal',
     },
   ],
-  variable: "--font-poppins",
+  variable: '--font-poppins', 
+  display: 'swap',
 });
 
 export const metadata: Metadata = {

@@ -16,7 +16,5 @@ export const Default: Story = {
   render: Template,
   args: {
     placeholder: 'Search',
-    onClear: () => console.log('clear'),
-    onSearch: (value) => console.log('search', value),
   },
 };

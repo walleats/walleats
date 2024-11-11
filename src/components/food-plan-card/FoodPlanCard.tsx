@@ -10,7 +10,7 @@ export interface FoodPlanCardProps {
 
 export const FoodPlanCard = ({ title, tag, image, onClick, darkText = false }: FoodPlanCardProps) => {
   return (
-    <div onClick={onClick} className="relative w-[150px] h-[192px] rounded-lg overflow-hidden">
+    <div onClick={onClick} className="relative w-[150px] h-[192px] rounded-md overflow-hidden">
       <Image src={image} alt={title} layout="fill" objectFit="cover" className="rounded-lg" />
       <div
         className={`absolute inset-0 flex flex-col justify-end p-2 ${

@@ -14,7 +14,7 @@ export interface TopBarProps {
 
 export const TopBar = ({
   title,
-  showBackButton = true,
+  showBackButton = false,
   onBackClick,
   showCartButton = true,
   onCartClick,
@@ -22,7 +22,7 @@ export const TopBar = ({
   onProfileClick,
 }: TopBarProps) => {
   return (
-    <div className="flex items-center justify-between w-full h-[41px] px-4 bg-background-50">
+    <div className="relative flex items-center w-full h-[41px] bg-background-50 px-4">
       {showBackButton && (
         <button
           type="button"
@@ -33,11 +33,11 @@ export const TopBar = ({
         </button>
       )}
 
-      <div className="flex-grow text-center font-medium text-h5 text-text-950">
+      <div className="absolute left-1/2 transform -translate-x-1/2 font-medium text-h5 text-text-950">
         {title}
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="ml-auto flex items-center gap-4">
         {showCartButton && (
           <button
             type="button"
@@ -61,4 +61,4 @@ export const TopBar = ({
   );
 };
 
-TopBar.displayName = "TopBar";
+TopBar.displayName = 'TopBar';

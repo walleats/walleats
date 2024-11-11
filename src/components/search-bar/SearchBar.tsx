@@ -1,28 +1,26 @@
+'use client'
 import React, { useState } from "react";
 import { icons } from "@/constants/icons";
 import { Icon } from "../icon/Icon";
 
 export interface SearchBarProps {
   placeholder: string;
-  onClear: () => void;
-  onSearch: (value: string) => void;
+  onClear?: () => void;
+  onSearch?: (value: string) => void;
 }
 
 export const SearchBar: React.FC<SearchBarProps> = ({
   placeholder,
-  onClear,
-  onSearch,
+ 
 }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value);
-    onSearch(e.target.value);
   };
 
   const handleClear = () => {
     setValue("");
-    onClear();
   };
 
   const borderColor = value.length > 0 ? "border-primary-500" : "border-primary-400";
@@ -36,7 +34,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
         onChange={handleChange}
       />
       {value.length === 0 ? (
-        <div className="cursor-pointer" onClick={() => onSearch(value)}>
+        <div className="cursor-pointer" >
           <Icon icon={icons.search} altText="search" size="medium" />
         </div>
       ) : (
