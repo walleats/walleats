@@ -20,7 +20,7 @@ export const RecipeDescription: React.FC<RecipeDescriptionProps> = ({
     onClickReview
 }) =>{
     return (
-        <div className="flex w-[378px] p-2 flex-col items-start gap-2 rounded-t-lg bg-[#FFF]">
+        <div className="flex w-full p-2 flex-col items-start gap-2 rounded-t-lg bg-[#FFF]">
             <div className="flex pr-2 justify-between items-center self-stretch">
                 <span className="flex-[1_0_0] text-text-950 font-bold text-h4 leading-[36px] font-poppins">
                     Description

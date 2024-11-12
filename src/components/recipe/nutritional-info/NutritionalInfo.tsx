@@ -7,7 +7,7 @@ export interface NutritionalInfoProps {
 
 export const NutritionalInfo: React.FC<NutritionalInfoProps> = ({ nutritionalProperties }) => {
     return (
-        <div className="flex w-[378px] p-2 flex-col items-start gap-2 bg-background-50">
+        <div className="flex w-full p-2 flex-col items-start gap-2 bg-background-50">
            <span className="text-text-950 font-poppins text-h3 font-bold leading-[42px]">
                 Nutritional Info
            </span>

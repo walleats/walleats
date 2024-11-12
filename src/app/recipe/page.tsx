@@ -77,41 +77,43 @@ export default function Recipe() {
         }}
         showSearchBar={false}
       />
+      <div className="w-full px-6">
 
-      <div className="flex w-full items-center justify-between mt-1 px-6">
-        <div className="text-text-950 text-h4 font-bold">Grilled Salmon</div>
-        <div className="flex gap-2">
-          <Icon icon={icons.heart}/>
-          <Icon icon={icons.share}/>
+        <div className="flex w-full items-center justify-between mt-1">
+          <div className="text-text-950 text-h4 font-bold">Grilled Salmon</div>
+          <div className="flex gap-2">
+            <Icon icon={icons.heart}/>
+            <Icon icon={icons.share}/>
+          </div>
         </div>
-      </div>
 
-      <div className="relative w-full max-w-[400px] h-[180px] aspect-[16/9] rounded-2xl overflow-hidden mt-2">
-        <Image 
-          src={images.grilledSalmon}
-          alt="Grilled Salmon"
-          layout="fill"
-          objectFit="cover"
-          className="rounded-2xl"
-        />
-      </div>
+        <div className="relative w-full max-w-full h-[180px] aspect-[16/9] rounded-2xl overflow-hidden mt-2">
+          <Image 
+            src={images.grilledSalmon}
+            alt="Grilled Salmon"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-2xl"
+          />
+        </div>
 
-      <IngredientsList itemProps={ingredients} onClick={() => {console.log("All items added to cart")}} />
-      <RecipeDescription
-        recipeDescription={{
-          description: "This is a simple recipe for grilled salmon. It is a healthy and delicious meal that can be prepared in under 30 minutes.",
-          review: 4,
-          reviews: 5,
-          time: 25,
-        }}
-        onClickReview={() => {console.log("Review submitted")}}
-      />
-      <NutritionalInfo
-        nutritionalProperties={nutritionalProperties}
-      />
-      <InstructionList
-        instructions={instructionList}
+        <IngredientsList itemProps={ingredients} onClick={() => {console.log("All items added to cart")}} />
+        <RecipeDescription
+          recipeDescription={{
+            description: "This is a simple recipe for grilled salmon. It is a healthy and delicious meal that can be prepared in under 30 minutes.",
+            review: 4,
+            reviews: 5,
+            time: 25,
+          }}
+          onClickReview={() => {console.log("Review submitted")}}
         />
+        <NutritionalInfo
+          nutritionalProperties={nutritionalProperties}
+        />
+        <InstructionList
+          instructions={instructionList}
+          />
+      </div>
 
     </div>
   );
