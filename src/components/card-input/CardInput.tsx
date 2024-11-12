@@ -26,14 +26,14 @@ export const CardInput = ({
     };
 
     const inputContainerStyle =
-        'h-11 px-[11px] py-3.5 bg-white rounded-lg border border-primary-500 flex justify-start items-center gap-2.5';
+        'h-11 px-[11px] py-3.5 bg-background-300 rounded-lg border border-primary-500 flex justify-start items-center gap-2.5';
 
     const inputStyle =
-        'w-full h-full text-[#b6b6b6] text-h5-regular leading-[30px] bg-transparent outline-none';
+        'w-full h-full text-text-400 text-h5-regular leading-[30px] bg-transparent outline-none';
 
     return (
         <div className={`${baseStyle} ${sizeStyles[size]}`}>
-            <label className="text-black text-h6-regular leading-normal">
+            <label className="text-text-500 text-h6-regular leading-normal">
                 {title}
             </label>
             <div className={`${inputContainerStyle} ${size === 'small' ? 'w-44' : 'self-stretch'}`}>
