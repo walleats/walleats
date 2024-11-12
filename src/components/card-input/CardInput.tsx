@@ -12,6 +12,7 @@ export const CardInput = ({
                               size = 'default',
                           }: CardInputProps) => {
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [value, setValue] = useState("");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
