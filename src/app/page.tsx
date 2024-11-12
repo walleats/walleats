@@ -8,7 +8,7 @@ import { foodPlans, navItems, offerItems } from "@/constants/mocks";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-background-50 h-screen w-screen items-center py-2 gap-2 overflow-y-auto overflow-x-hidden">
+    <div className="flex flex-col bg-background-50 min-h-screen w-full items-center py-2 gap-2 overflow-y-auto overflow-x-hidden">
       <Top
         topBarProps={{
           title: "Home",
