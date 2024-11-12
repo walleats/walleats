@@ -5,4 +5,9 @@ export const images = {
   foodLargeSqaured: `${basePath}/stock-image2.png`,
   foodSmall: `${basePath}/food.png`,
   mcdonalds: `${basePath}/mcdonalds.png`,
+  salmon: `${basePath}/salmon.jpeg`,
+  pepper: `${basePath}/pepper.jpeg`,
+  soy: `${basePath}/soy.jpeg`,
+  garlic: `${basePath}/garlic.jpeg`,
+  grilledSalmon: `${basePath}/grilledSalmon.webp`,
 } 

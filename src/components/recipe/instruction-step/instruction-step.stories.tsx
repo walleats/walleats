@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import { InstructionStep, InstructionStepProps } from './InstructionStep';
 
 const meta: Meta<InstructionStepProps> = {
-    title: 'InstructionStep',
+    title: 'Recipe/InstructionStep',
     component: InstructionStep,
     parameters: { layout: 'centered' },
 };

@@ -29,5 +29,7 @@ export const icons = {
   starFilled: `${basePath}/star-filled.svg`,
   starOutlined: `${basePath}/star-outlined.svg`,
   trash: `${basePath}/trash.svg`,
-  errorCircle: `${basePath}/error-circle.svg`
+  errorCircle: `${basePath}/error-circle.svg`,
+  protein: `${basePath}/protein.svg`,
+  carbs: `${basePath}/carbs.svg`,
 }

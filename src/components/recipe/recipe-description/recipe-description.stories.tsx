@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { RecipeDescription, RecipeDescriptionProps } from './RecipeDescription';
 
 const meta: Meta<RecipeDescriptionProps> = {
-    title: 'RecipeDescription',
+    title: 'Recipe/RecipeDescription',
     component: RecipeDescription,
     parameters: { layout: 'centered' },
 };

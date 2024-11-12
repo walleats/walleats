@@ -3,7 +3,7 @@ import { RecipeReview } from './RecipeReview';
 import {RecipeDescriptionProps} from "@/components/recipe/recipe-description/RecipeDescription";
 
 const meta: Meta<RecipeDescriptionProps> = {
-    title: 'RecipeReview',
+    title: 'Recipe/RecipeReview',
     component: RecipeReview,
     parameters: { layout: 'centered' },
 };

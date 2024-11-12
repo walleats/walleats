@@ -3,7 +3,7 @@ import { InstructionList, InstructionListProps } from './InstructionList';
 
 
 const meta: Meta<InstructionListProps> = {
-    title: 'InstructionList',
+    title: 'Recipe/InstructionList',
     component: InstructionList,
     parameters: { layout: 'centered' },
 };
@@ -19,7 +19,6 @@ const Template = (args: InstructionListProps) => <InstructionList {...args} />
 export const Default: Story = {
     render: Template,
     args: {
-        instructionList: {
             instructions: [
                 {
                     stepNumber: 1,
@@ -42,7 +41,6 @@ export const Default: Story = {
                     stepDescription: 'Once cooked, serve on a plate and garnish as needed.',
                 },
             ],
-        },
     },
 };
 
@@ -50,9 +48,7 @@ export const Default: Story = {
 export const Empty: Story = {
     render: Template,
     args: {
-        instructionList: {
             instructions: [],
-        },
     },
 };
 

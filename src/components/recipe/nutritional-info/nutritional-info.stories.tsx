@@ -13,7 +13,7 @@ const nutritionalProperties = [
 ];
 
 const meta: Meta<NutritionalInfoProps> = {
-    title: 'NutritionalInfo',
+    title: 'Recipe/NutritionalInfo',
     component: NutritionalInfo,
     parameters: { layout: 'centered' },
 };

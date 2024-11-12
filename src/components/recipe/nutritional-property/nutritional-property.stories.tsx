@@ -4,7 +4,7 @@ import {icons} from "@/constants/icons";
 
 
 const meta: Meta<NutritionalPropertyProps> = {
-    title: 'NutritionalProperty',
+    title: 'Recipe/NutritionalProperty',
     component: NutritionalProperty,
     parameters: { layout: 'centered' },
 };

@@ -7,7 +7,7 @@ import {Button} from "@/components/button/Button";
 
 
 const meta: Meta<IngredientsListProps> = {
-    title: 'IngredientsList',
+    title: 'Recipe/IngredientsList',
     component: IngredientsList,
     parameters: { layout: 'centered' },
 };

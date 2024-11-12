@@ -1,15 +1,11 @@
 import {InstructionStep} from "@/components/recipe/instruction-step/InstructionStep";
 
-export interface InstructionList{
+export interface InstructionListProps {
     instructions: InstructionStep[];
 }
 
-export interface InstructionListProps {
-    instructionList: InstructionList;
-}
-
 export const InstructionList: React.FC<InstructionListProps> = ({
-    instructionList
+    instructions
 }) => {
     return (
         <div className="flex w-[378px] p-2 flex-col items-start gap-2 bg-white">
@@ -17,7 +13,7 @@ export const InstructionList: React.FC<InstructionListProps> = ({
                 Instructions
             </span>
 
-            {instructionList.instructions.map((instruction, index) => (
+            {instructions.map((instruction, index) => (
                 <InstructionStep
                     key={index}
                     instructionStep={instruction}
