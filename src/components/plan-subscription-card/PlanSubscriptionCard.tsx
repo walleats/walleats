@@ -15,7 +15,7 @@ export const PlanSubscriptionCard = ({
                                         label,
                                      }: PlanSubscriptionCardProps) => {
     return (
-        <div className="p-3 bg-background-50 border border-primary-500 rounded-lg w-[180px] h-[155px] flex flex-col">
+        <div className="p-2 bg-background-50 border border-primary-500 rounded-lg w-[180px] h-[155px] flex flex-col gap-2">
             <div>
                 <div className='text-text-500 text-h6 font-bold'>{title}</div>
                 <p className="text-text-400 text-body font-regular">{description}</p>
