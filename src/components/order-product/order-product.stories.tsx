@@ -18,8 +18,8 @@ export const Default: Story = {
     render: Template,
     args: {
         text: 'Product Name',
-        firstSubText: 'First Subtitle',
-        secondSubText: 'Second Subtitle',
+        firstSubText: '2x',
+        secondSubText: '$10.00',
         imagePath: images.mcdonalds,
         onClick: () => alert('Product clicked!'),
     },

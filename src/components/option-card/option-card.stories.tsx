@@ -16,7 +16,7 @@ const Template = (args: OptionCardProps) => <OptionCard {...args} />;
 export const Default: Story = {
   render: Template,
   args: {
-    title: 'Some Plan',
+    title: "Food",
     image: images.foodLargeSqaured,
   },
 };

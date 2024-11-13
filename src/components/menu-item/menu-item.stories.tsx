@@ -19,7 +19,7 @@ export const Default: Story = {
     args: {
         productTitle: 'Some Title',
         productDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae ornare nibh. Aenean vel pharetra quam.',
-        imagePath: images.mcdonalds,
+        imagePath: images.grilledSalmon,
         price: '$20',
     }
 }

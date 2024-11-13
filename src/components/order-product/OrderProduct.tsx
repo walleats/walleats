@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export interface OrderProductProps {
@@ -23,19 +24,22 @@ export const OrderProduct = ({
             onClick={onClick}
         >
             <div className="flex items-center space-x-4">
-                <div
-                    className={`flex items-center justify-center w-[37px] h-[38px] overflow-hidden border border-text-950 ${
+            <div
+                    className={`flex items-center justify-center w-[38px] h-[38px] overflow-hidden ${
                         imageShape === 'rounded' ? 'rounded-full' : 'rounded-md'
                     }`}
                 >
-                    <img
+                    <Image
                         src={imagePath}
-                        alt="Product"
-                        className="w-full h-full object-cover"
+                        alt="Store"
+                        width={38}
+                        height={38}
+                        className="object-cover"
+                        style={{ width: '100%', height: '100%' }}
                     />
                 </div>
 
-                <div className="ml-2 w-[247px] h-[24px]">
+                <div className="w-[247px]">
                     <h3 className="text-h6 font-medium text-text-500">{text}</h3>
                 </div>
 
