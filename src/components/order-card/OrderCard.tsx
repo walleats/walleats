@@ -37,7 +37,7 @@ export const OrderCard = ({
                     <img
                         src={imagePath}
                         alt="Product"
-                        className="w-full h-full object-cover"
+                        className="rounded-[8px]"
                     />
                 </div>
                 <div className={"w-[197px] h-[42px] flex items-center"}>
