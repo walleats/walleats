@@ -9,7 +9,7 @@ export interface OptionCardProps {
 
 export const OptionCard = ({ title, image, onClick, darkText = false }: OptionCardProps) => {
   return (
-    <div onClick={onClick} className="relative w-[170px] h-[192px] rounded-md overflow-hidden">
+    <div onClick={onClick} className="relative w-[190px] h-[180px] rounded-md overflow-hidden">
       <Image src={image} alt={title} layout="fill" objectFit="cover" className="rounded-md" />
       <div
         className={`absolute inset-0 flex flex-col justify-end p-2 ${

@@ -1,5 +1,5 @@
 'use client'
-import { Button } from "@/components/button/Button";
+import { IconButton } from "@/components/button/IconButton";
 import { Icon } from "@/components/icon/Icon";
 import { ListItemProps } from "@/components/list-item/ListItem";
 import { IngredientsList } from "@/components/recipe/ingredients-list/IngredientsList";
@@ -12,8 +12,7 @@ import { images } from "@/constants/images";
 import { instructionList, nutritionalProperties } from "@/constants/mocks";
 import Image from "next/image";
 
-const label= "Add to cart"
-const submitIcon = <Button label={label} size="xsmall" />
+const submitIcon = <IconButton icon={icons.plusWhite} />
 
 const ingredients: ListItemProps[] = [
   {
@@ -85,13 +84,13 @@ export default function Recipe() {
             <Icon icon={icons.share}/>
           </div>
         </div>
-        <div className="relative w-full max-w-full h-[180px] aspect-[16/9] rounded-2xl overflow-hidden mt-2">
+        <div className="relative w-full max-w-full h-[180px] aspect-[16/9] rounded-md overflow-hidden mt-2">
           <Image 
             src={images.grilledSalmon}
             alt="Grilled Salmon"
             layout="fill"
             objectFit="cover"
-            className="rounded-2xl"
+            className="rounded-md"
           />
         </div>
         <IngredientsList itemProps={ingredients} onClick={() => {console.log("All items added to cart")}} />

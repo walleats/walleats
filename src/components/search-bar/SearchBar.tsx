@@ -26,7 +26,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
   const borderColor = value.length > 0 ? "border-primary-500" : "border-primary-400";
 
   return (
-    <div className={`flex items-center justify-between w-full bg-background-300 py-2 px-3 rounded-lg border ${borderColor}`}>
+    <div className={`flex items-center justify-between w-full bg-background-300 py-2 px-3 rounded-md border ${borderColor}`}>
       <input
         className="w-full bg-transparent outline-none"
         placeholder={placeholder}

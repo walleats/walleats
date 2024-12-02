@@ -8,7 +8,7 @@ import { foodPlans, navItems, offerItems } from "@/constants/mocks";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-background-50 min-h-screen w-full items-center py-2 gap-2 overflow-y-auto overflow-x-hidden">
+    <div className="flex flex-col bg-background-50 min-h-screen w-full items-center py-2 px-[18px] gap-2 overflow-y-auto overflow-x-hidden">
       <Top
         topBarProps={{
           title: "Home",
@@ -19,7 +19,7 @@ export default function Home() {
         }}
       />
 
-      <div className="flex items-center justify-center space-x-4 mt-1">
+      <div className="flex w-full items-center justify-between mt-1">
         <OptionCard title="Food" image={images.foodLargeDark} />
         <OptionCard title="Ingredients" image={images.foodLargeDark} />
       </div>
