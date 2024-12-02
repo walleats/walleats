@@ -2,9 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import {IngredientsList, IngredientsListProps} from "@/components/recipe/ingredients-list/IngredientsList";
 import {icons} from "@/constants/icons";
 import {Icon} from "@/components/icon/Icon";
-import {Button} from "@/components/button/Button";
-
-
+import { IconButton } from '@/components/button/IconButton';
 
 const meta: Meta<IngredientsListProps> = {
     title: 'Recipe/IngredientsList',
@@ -18,8 +16,6 @@ type Story = StoryObj<IngredientsListProps>;
 
 const Template = (args: IngredientsListProps) => <IngredientsList {...args} />
 
-const label= "Add to cart"
-
 export const Default: Story={
     render: Template,
     args: {
@@ -29,7 +25,7 @@ export const Default: Story={
                 icon: <Icon icon={icons.meat} altText="food" size="large" />,
                 title: 'Eggs',
                 subtitle: '12 eggs',
-                submitIcon: <Button label={label} size="xsmall" />,
+                submitIcon: <IconButton icon={icons.plusWhite} />,
                 onClick: () => {console.log("Item added to cart")}
             },
             {
@@ -37,7 +33,7 @@ export const Default: Story={
                 icon: <Icon icon={icons.meat} altText="food" size="large" />,
                 title: 'Eggs',
                 subtitle: '12 eggs',
-                submitIcon: <Button label={label} size="xsmall" />,
+                submitIcon: <IconButton icon={icons.plusWhite} />,
                 onClick: () => {console.log("Item added to cart")}
             },
             {
@@ -45,7 +41,7 @@ export const Default: Story={
                 icon: <Icon icon={icons.meat} altText="food" size="large" />,
                 title: 'Eggs',
                 subtitle: '12 eggs',
-                submitIcon: <Button label={label} size="xsmall" />,
+                submitIcon: <IconButton icon={icons.plusWhite} />,
                 onClick: () => {console.log("Item added to cart")}
             },
         ],

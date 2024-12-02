@@ -3,7 +3,7 @@ import { NavItem, NavItemProps } from "./NavItem";
 import { icons } from "@/constants/icons";
 
 const meta: Meta<NavItemProps> = {
-  title: 'NavItem',
+  title: 'Nav/NavItem',
   component: NavItem,
   parameters: { layout: 'centered' },
 };

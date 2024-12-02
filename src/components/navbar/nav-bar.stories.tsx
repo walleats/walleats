@@ -3,7 +3,7 @@ import { NavBar } from "./NavBar";
 import { navItems } from "@/constants/mocks";
 
 const metaNavBar: Meta = {
-  title: 'NavBar',
+  title: 'Nav/NavBar',
   component: NavBar,
   parameters: { layout: 'fullscreen' },
 };

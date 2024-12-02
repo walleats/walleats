@@ -8,7 +8,7 @@ import {Quantity} from "@/components/quantity/Quantity";
 import {Button} from "@/components/button/Button";
 
 const meta: Meta<ListItemProps> = {
-  title: 'ListItem',
+  title: 'List/ListItem',
   component: ListItem,
   parameters: { layout: 'centered' },
 };

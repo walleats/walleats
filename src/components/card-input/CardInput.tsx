@@ -27,7 +27,7 @@ export const CardInput = ({
     };
 
     const inputContainerStyle =
-        'h-11 px-[11px] py-3.5 bg-background-300 rounded-lg border border-primary-500 flex justify-start items-center gap-2.5';
+        'h-11 px-[11px] py-3.5 bg-background-300 rounded-md border border-primary-500 flex justify-start items-center gap-2.5';
 
     const inputStyle =
         'w-full h-full text-text-400 text-h5-regular leading-[30px] bg-transparent outline-none';

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { PlanSubscriptionCard, PlanSubscriptionCardProps } from './PlanSubscriptionCard';
 
 const meta: Meta<PlanSubscriptionCardProps> = {
-    title: 'PlanSubscriptionCard',
+    title: 'Card/PlanSubscriptionCard',
     component: PlanSubscriptionCard,
     parameters: { layout: 'centered' },
 };

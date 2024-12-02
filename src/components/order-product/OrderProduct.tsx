@@ -20,7 +20,7 @@ export const OrderProduct = ({
                              }: OrderProductProps) => {
     return (
         <div
-            className="flex items-center justify-between w-full p-2 border bg-background-50 h-[54px] min-w-[378px] border-primary-500 rounded-lg"
+            className="flex items-center justify-between w-full p-2 border bg-background-50 h-[54px] min-w-[378px] border-primary-500 rounded-md"
             onClick={onClick}
         >
             <div className="flex items-center space-x-4">

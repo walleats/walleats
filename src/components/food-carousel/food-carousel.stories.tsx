@@ -3,7 +3,7 @@ import { images } from '@/constants/images';
 import { FoodCarousel, FoodCarouselProps } from './FoodCarousel';
 
 const meta: Meta<FoodCarouselProps> = {
-  title: 'FoodCarousel',
+  title: 'Card/FoodCarousel',
   component: FoodCarousel,
   parameters: { layout: 'centered' },
 };

@@ -15,7 +15,7 @@ export const InstructionStep: React.FC<InstructionStepProps> = ({
 }) => {
     const {stepNumber, stepName, stepDescription} = instructionStep;
     return (
-        <div className="flex w-[362px] p-2 flex-col items-start gap-2 rounded-lg bg-white">
+        <div className="flex w-[362px] p-2 flex-col items-start gap-2 rounded-md bg-white">
             <div className="flex items-end gap-[1px] self-stretch">
                 <span className="text-text-950 font-poppins text-h5 font-bold leading-[30px]">
                     {stepNumber}

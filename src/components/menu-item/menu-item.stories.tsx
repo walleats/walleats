@@ -3,7 +3,7 @@ import {Meta, StoryObj} from "@storybook/react";
 import {images} from "@/constants/images";
 
 const meta: Meta<MenuItemProps> = {
-    title: 'MenuItem',
+    title: 'Menu/MenuItem',
     component: MenuItem,
     parameters: {layout: 'centered'},
 };

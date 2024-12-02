@@ -2,7 +2,7 @@ import {Bill, BillProps} from "@/components/bill/Bill";
 import {Meta, StoryObj} from "@storybook/react";
 
 const meta: Meta<BillProps> = {
-    title: 'Bill',
+    title: 'Order/Bill',
     component: Bill,
     parameters: {layout: 'centered'},
 }

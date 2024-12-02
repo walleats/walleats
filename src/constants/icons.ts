@@ -32,4 +32,6 @@ export const icons = {
   errorCircle: `${basePath}/error-circle.svg`,
   protein: `${basePath}/protein.svg`,
   carbs: `${basePath}/carbs.svg`,
+  plusWhite: `${basePath}/plus-white.svg`,
+  cartWhite: `${basePath}/cart-white.svg`,
 }

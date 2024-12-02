@@ -2,7 +2,7 @@ import {Meta, StoryObj} from "@storybook/react";
 import {CardData} from "@/components/card-data/CardData";
 
 const meta:Meta = {
-    title: 'CardData',
+    title: 'Input/CardData',
     component: CardData,
     parameters: { layout: 'centered' },
 }

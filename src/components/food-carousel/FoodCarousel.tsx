@@ -19,7 +19,7 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ items }) => {
   };
 
   return (
-    <div className="relative w-[382px] h-[152px] flex flex-col overflow-hidden rounded-lg">
+    <div className="relative w-[382px] h-[152px] flex flex-col overflow-hidden rounded-md">
       <div className="relative w-full h-full">
         <Image
           src={items[currentIndex].image}

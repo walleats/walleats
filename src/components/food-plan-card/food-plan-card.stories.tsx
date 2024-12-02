@@ -3,7 +3,7 @@ import { images } from '@/constants/images';
 import { FoodPlanCard, FoodPlanCardProps } from './FoodPlanCard';
 
 const meta: Meta<FoodPlanCardProps> = {
-  title: 'FoodPlanCard',
+  title: 'FoodPlan/FoodPlanCard',
   component: FoodPlanCard,
   parameters: { layout: 'centered' },
 };

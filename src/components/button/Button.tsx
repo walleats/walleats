@@ -1,13 +1,11 @@
 import React from 'react';
 import { Spinner } from '../loaders/Spinner';
-import { Icon } from '../icon/Icon';
 
 export interface ButtonProps {
-  variant?: 'default' | 'outlined' | 'text' | 'icon';
+  variant?: 'default' | 'outlined' | 'text';
   state?: 'default' | 'disabled' | 'pressed' | 'loading';
   size?: 'small' | 'medium' | 'large' | 'xsmall' | 'component' | 'componentSmall';
   label?: string;
-  icon?: string;
   onClick?: () => void;
 }
 
@@ -16,20 +14,18 @@ export const Button = ({
   state = 'default',
   size = 'medium',
   label,
-  icon,
   ...props
 }: ButtonProps) => {
   const baseStyle = 'rounded-md transition-all ease-in-out duration-150';
 
-const sizeStyles = {
-  small: 'w-[255px] h-[47px] text-h5 font-medium',
-  medium: 'w-[352px] h-[47px] text-h5 font-medium',
-  large: 'w-[398px] h-[47px] text-h5 font-medium',
-  component: 'w-[144px] h-[44px] text-body font-medium',
-  componentSmall: 'w-[134px] h-[44px] text-body font-medium',
-  xsmall: 'w-[87px] h-[24px] text-button font-medium', 
-  icon: 'w-[45px] h-[45px] flex items-center justify-center',
-};
+  const sizeStyles = {
+    small: 'w-[255px] h-[47px] text-h5 font-medium',
+    medium: 'w-[352px] h-[47px] text-h5 font-medium',
+    large: 'w-[398px] h-[47px] text-h5 font-medium',
+    component: 'w-[144px] h-[44px] text-body font-medium',
+    componentSmall: 'w-[134px] h-[44px] text-body font-medium',
+    xsmall: 'w-[87px] h-[24px] text-button font-medium rounded-sm',
+  };
 
   const variantStyles = {
     default: {
@@ -42,7 +38,7 @@ const sizeStyles = {
       default: 'bg-transparent border-2 border-primary-500 text-text-950',
       disabled: 'bg-transparent border-2 border-neutral-300 text-text-400',
       pressed: 'bg-transparent border-2 border-primary-600 text-text-950',
-      loading: 'bg-transparent border-2 border-primary-300 flex items-center justify-center', 
+      loading: 'bg-transparent border-2 border-primary-300 flex items-center justify-center',
     },
     text: {
       default: 'bg-transparent border-transparent text-text-950',
@@ -50,25 +46,17 @@ const sizeStyles = {
       pressed: 'bg-transparent border-transparent text-primary-600',
       loading: 'bg-transparent border-transparent flex items-center justify-center',
     },
-    icon: {
-      default: 'bg-primary-500 ', 
-      disabled: 'bg-neutral-300 ',
-      pressed: 'bg-primary-600 ',
-      loading: 'bg-primary-300',
-    },
   };
 
   return (
     <button
       type="button"
-      className={`${baseStyle} ${sizeStyles[variant === 'icon' ? 'icon' : size]} ${variantStyles[variant][state]}`}
+      className={`${baseStyle} ${sizeStyles[size]} ${variantStyles[variant][state]}`}
       disabled={state === 'disabled' || state === 'loading'}
       {...props}
     >
       {state === 'loading' ? (
         <Spinner size="small" color="white" />
-      ) : variant === 'icon' && icon ? (
-        <Icon icon={icon} size="medium" />
       ) : (
         <>
           {label}
@@ -78,4 +66,4 @@ const sizeStyles = {
   );
 };
 
-Button.displayName = "Button";
+Button.displayName = 'Button';

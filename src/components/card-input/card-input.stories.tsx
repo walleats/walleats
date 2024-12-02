@@ -2,7 +2,7 @@ import {Meta, StoryObj} from "@storybook/react";
 import {CardInput, CardInputProps} from "@/components/card-input/CardInput";
 
 const meta:Meta<CardInputProps> = {
-    title: 'CardInput',
+    title: 'Input/CardInput',
     component: CardInput,
     parameters: { layout: 'centered' },
 }

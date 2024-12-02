@@ -2,9 +2,28 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Top, TopProps } from "./Top";
 
 const meta: Meta<TopProps> = {
-  title: 'TopBar',
+  title: "Nav/TopBar",
   component: Top,
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: "fullscreen" },
+  argTypes: {
+    // TopBarProps controls
+    topBarProps: {
+      control: 'object',
+      defaultValue: {
+        title: "Home",
+        showBackButton: true,
+        showCartButton: false,
+        showProfileButton: false,
+      },
+    },
+
+    // SearchBarProps controls
+    showSearchBar: { control: "boolean", defaultValue: true },
+    searchProps: {
+      control: 'object',
+      defaultValue: { placeholder: "Search for items, categories, or restaurants" },
+    },
+  },
 };
 
 export default meta;
@@ -16,11 +35,14 @@ export const Default: Story = {
   render: Template,
   args: {
     topBarProps: {
-      title: 'Home',
+      title: "Home",
+      showBackButton: true,
+      showCartButton: true,
+      showProfileButton: true,
     },
     showSearchBar: true,
     searchProps: {
-      placeholder: 'Search for products or restaurants',
+      placeholder: "Search for items, categories, or restaurants",
     },
   },
 };

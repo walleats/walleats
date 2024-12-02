@@ -4,7 +4,7 @@ import { OrderProduct, OrderProductProps } from './OrderProduct';
 import {images} from "@/constants/images";
 
 const meta: Meta<OrderProductProps> = {
-    title: 'OrderProduct',
+    title: 'Order/OrderProduct',
     component: OrderProduct,
     parameters: { layout: 'centered' }
 }

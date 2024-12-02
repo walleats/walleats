@@ -11,7 +11,7 @@ export interface PlanFoodProps {
 
 export const PlanFood: React.FC<PlanFoodProps> = ({ title, description, image, onSubmit }) => {
   return (
-    <div className="flex flex-col items-center w-[374px] bg-background-50 p-2 rounded-lg border border-primary-500">
+    <div className="flex flex-col items-center w-[374px] bg-background-50 p-2 rounded-md border border-primary-500">
       <div className="relative w-full h-36">
         <Image
           src={image}

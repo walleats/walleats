@@ -1,19 +1,29 @@
-import {OrderCard, OrderCardProps} from "@/components/order-card/OrderCard";
-import {Meta, StoryObj} from "@storybook/react";
-import {images} from "@/constants/images";
+import { OrderCard, OrderCardProps } from "@/components/order-card/OrderCard";
+import { Meta, StoryObj } from "@storybook/react";
+import { images } from "@/constants/images";
 
 const meta: Meta<OrderCardProps> = {
-    title: 'OrderCard',
+    title: 'Card/OrderCard',
     component: OrderCard,
     parameters: { layout: 'centered' },
-}
+    argTypes: {
+        status: {
+            control: 'select', 
+            options: ['Confirmed', 'Cancelled', 'Delivered'], 
+        },
+        imagePath: {
+            control: 'select', 
+            options: Object.values(images), 
+        },
+    },
+};
 
 export default meta;
-type Story = StoryObj<OrderCardProps>
+type Story = StoryObj<OrderCardProps>;
 
-const Template = (args: OrderCardProps) => <OrderCard {...args} />
+const Template = (args: OrderCardProps) => <OrderCard {...args} />;
 
-export const ConfirmedOrderCard: Story = {
+export const Playground: Story = {
     render: Template,
     args: {
         status: "Confirmed",
@@ -21,27 +31,5 @@ export const ConfirmedOrderCard: Story = {
         imagePath: images.mcdonalds,
         storeName: "Store Name",
         price: 0.0,
-    }
-}
-
-export const CancelledOrderCard: Story = {
-    render: Template,
-    args: {
-        status: "Cancelled",
-        datetime: "01/01 - 12:00hs",
-        imagePath: images.mcdonalds,
-        storeName: "Store Name",
-        price: 0.0,
     },
-}
-
-export const DeliveredOrderCard: Story = {
-    render: Template,
-    args: {
-        status: "Delivered",
-        datetime: "01/01 - 12:00hs",
-        imagePath: images.mcdonalds,
-        storeName: "Store Name",
-        price: 0.0,
-    },
-}
+};

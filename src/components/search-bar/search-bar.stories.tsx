@@ -1,10 +1,13 @@
-import { SearchBar, SearchBarProps } from "./SearchBar";
 import { Meta, StoryObj } from "@storybook/react";
+import { SearchBar, SearchBarProps } from "./SearchBar";
 
 const meta: Meta<SearchBarProps> = {
-  title: 'SearchBar',
+  title: "Input/SearchBar",
   component: SearchBar,
-  parameters: { layout: 'fullscreen' },
+  parameters: { layout: "fullscreen" },
+  argTypes: {
+    placeholder: { control: "text", defaultValue: "Search for products..." },
+  },
 };
 
 export default meta;
@@ -15,6 +18,20 @@ const Template = (args: SearchBarProps) => <SearchBar {...args} />;
 export const Default: Story = {
   render: Template,
   args: {
-    placeholder: 'Search',
+    placeholder: "Search for products or restaurants",
+  },
+};
+
+export const WithoutText: Story = {
+  render: Template,
+  args: {
+    placeholder: "Search for products or restaurants",
+  },
+};
+
+export const CustomPlaceholder: Story = {
+  render: Template,
+  args: {
+    placeholder: "Search by name, category, or price",
   },
 };

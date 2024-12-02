@@ -3,7 +3,7 @@ import { images } from '@/constants/images';
 import { OptionCard, OptionCardProps } from './OptionCard';
 
 const meta: Meta<OptionCardProps> = {
-  title: 'OptionCard',
+  title: 'Card/OptionCard',
   component: OptionCard,
   parameters: { layout: 'centered' },
 };

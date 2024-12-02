@@ -15,7 +15,7 @@ export const MenuItem = ({
                              price,
                          }: MenuItemProps) => {
     return (
-        <div className={"flex flex-col items-center justify-center w-[384px] h-[204px] border bg-background-50 border-primary-500 rounded-lg"}>
+        <div className={"flex flex-col items-center justify-between w-[384px] h-[204px] border bg-background-50 border-primary-500 rounded-md"}>
             <div className="flex items-center justify-center w-[382px] h-[150px] borderless">
                 <div className={"flex justify-between w-[352px] h-[118px]"}>
                     <div className={"flex flex-col w-[218px] h-[114px]"}>
@@ -26,7 +26,7 @@ export const MenuItem = ({
                             <p className="text-body font-medium text-text-400 line-clamp-4">{productDescription}</p>
                         </div>
                     </div>
-                    <Image src={imagePath} alt="Product" width={118} height={118} className="rounded-lg"/>
+                    <Image src={imagePath} alt="Product" width={118} height={118} className="rounded-md"/>
                 </div>
             </div>
 
