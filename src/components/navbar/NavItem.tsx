@@ -13,7 +13,7 @@ export const NavItem: React.FC<NavItemProps> = ({ iconActive, iconInactive, stat
 
   return (
     <div
-      className={`flex flex-col items-center justify-evenly rounded-2xl w-[50px] h-[50px] ${
+      className={`flex flex-col items-center justify-center space-y-1 rounded-2xl w-[50px] h-[50px] ${
         isActive ? 'bg-primary-600' : 'bg-transparent'
       }`}
     >
