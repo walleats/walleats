@@ -21,10 +21,10 @@ export const ListItem = ({
 }: ListItemProps) => {
   return (
     <div
-      className="flex items-center min-w-[300px] justify-between w-full p-2 border bg-background-50 h-[70px] border-primary-500 rounded-md"
+      className="flex items-center min-w-[300px] justify-between p-2 border bg-background-50 h-[70px] border-primary-500 rounded-md"
       onClick={onClick}
     >
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center gap-1">
         <div
           className={`flex items-center justify-center w-[50px] h-[50px] overflow-hidden ${
             showBorder ? 'border border-text-950' : ''
@@ -38,8 +38,9 @@ export const ListItem = ({
           <h3 className="text-h6 font-bold text-text-500">{title}</h3>
           {subtitle && <p className="text-h6 font-medium text-text-400">{subtitle}</p>}
         </div>
-      </div>
-      {submitIcon}
+        </div>
+        {submitIcon}
+
     </div>
   );
 };
