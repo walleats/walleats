@@ -38,7 +38,6 @@ export const Default: Story = {
       title: "Home",
       showBackButton: true,
       showCartButton: true,
-      showProfileButton: true,
     },
     showSearchBar: true,
     searchProps: {
