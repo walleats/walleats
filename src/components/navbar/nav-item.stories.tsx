@@ -19,6 +19,7 @@ export const Active: Story = {
     iconActive: icons.homeActive,
     iconInactive: icons.homeInactive,
     state: "active",
+    label: "Home",
   },
 };
 
@@ -27,6 +28,7 @@ export const Inactive: Story = {
     iconActive: icons.homeActive,
     iconInactive: icons.homeInactive,
     state: "inactive",
+    label: "Home",
   },
   render: Template,
 };

@@ -4,24 +4,27 @@ export interface OptionCardProps {
   title: string;
   image: string;
   onClick?: () => void;
-  darkText?: boolean;
 }
 
-export const OptionCard = ({ title, image, onClick, darkText = false }: OptionCardProps) => {
+export const OptionCard = ({ title, image, onClick }: OptionCardProps) => {
   return (
-    <div onClick={onClick} className="relative w-[190px] h-[180px] rounded-md overflow-hidden">
-      <Image src={image} alt={title} layout="fill" objectFit="cover" className="rounded-md" />
-      <div
-        className={`absolute inset-0 flex flex-col justify-end p-2 ${
-          darkText 
-            ? "bg-gradient-to-t from-[rgba(255,255,255,0.6)] via-transparent to-transparent" 
-            : "bg-gradient-to-t from-[rgba(0,0,0,0.6)] via-transparent to-transparent"
-        }`}
-      >
-        <span className={`${darkText ? "text-black" : "text-white"} text-h6 font-bold mb-2`}>
-          {title}
-        </span> 
+    <div
+      onClick={onClick}
+      className="w-[190px] h-[170px] bg-background-50 rounded-md overflow-hidden flex flex-col items-center gap-2 cursor-pointer"
+    >
+      <div className="w-[140px] h-[130px] flex-shrink-0">
+        <Image
+          src={image}
+          alt={title}
+          width={140}
+          height={130}
+          className="rounded-md object-cover"
+        />
       </div>
+
+      <span className="text-text-400 text-h5 font-medium">
+        {title}
+      </span>
     </div>
   );
 };

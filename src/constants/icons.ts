@@ -1,3 +1,4 @@
+
 const basePath = '/icons'
 export const icons = {
   home: `${basePath}/home.svg`,
@@ -21,8 +22,6 @@ export const icons = {
   orderInactive: `${basePath}/order-inactive.svg`,
   profile: `${basePath}/profile.svg`,
   recipe: `${basePath}/recipe.svg`,
-  recipeActive: `${basePath}/recipe-active.svg`,
-  recipeInactive: `${basePath}/recipe-inactive.svg`,
   restaurant: `${basePath}/restaurant.svg`,
   search: `${basePath}/search.svg`,
   share: `${basePath}/share.svg`,
@@ -34,4 +33,8 @@ export const icons = {
   carbs: `${basePath}/carbs.svg`,
   plusWhite: `${basePath}/plus-white.svg`,
   cartWhite: `${basePath}/cart-white.svg`,
+  recipeActive: `${basePath}/recipe_on.svg`,
+  recipeInactive: `${basePath}/recipe_off.svg`,
+  profileActive: `${basePath}/profile_on.svg`,
+  profileInactive: `${basePath}/profile_off.svg`,
 }

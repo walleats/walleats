@@ -7,25 +7,26 @@ import {  } from "@/components/list-item/ListItem";
 export const offerItems: FoodCarosuelItem[] = [
   {
     title: "Chicken Burger",
-    label: "50% off",
+    label: "50% OFF",
     image: images.foodLarge,
   },
   {
     title: "Pizza Margherita",
-    label: "10% off",
+    label: "10% OFF",
     image: images.foodLargeDark,
   },
   {
     title: "Penni Pasta",
-    label: "20% off",
+    label: "20% OFF",
     image: images.foodLargeDark,
   },
 ];
 
 export const navItems = [
-  { iconActive: icons.homeActive, iconInactive: icons.homeInactive },
-  { iconActive: icons.recipeActive, iconInactive: icons.recipeInactive },
-  { iconActive: icons.orderActive, iconInactive: icons.orderInactive },
+  { iconActive: icons.homeActive, iconInactive: icons.homeInactive, label: "Home" },
+  { iconActive: icons.recipeActive, iconInactive: icons.recipeInactive, label: "Recipes" },
+  { iconActive: icons.orderActive, iconInactive: icons.orderInactive, label: "Orders" },
+  { iconActive: icons.profileActive, iconInactive: icons.profileInactive, label: "Profile" },
 ];
 
 export const foodPlans: FoodPlanCardProps[] = [

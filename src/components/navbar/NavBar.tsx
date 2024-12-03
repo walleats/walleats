@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavItem } from './NavItem';
 
 interface NavBarProps {
-  navItems: { iconActive: string; iconInactive: string }[];
+  navItems: { iconActive: string; iconInactive: string, label: string }[];
 }
 
 export const NavBar: React.FC<NavBarProps> = ({ navItems }) => {
@@ -18,6 +18,7 @@ export const NavBar: React.FC<NavBarProps> = ({ navItems }) => {
             iconActive={item.iconActive}
             iconInactive={item.iconInactive}
             state={index === selectedIndex ? 'active' : 'inactive'}
+            label={item.label}
           />
         </div>
       ))}

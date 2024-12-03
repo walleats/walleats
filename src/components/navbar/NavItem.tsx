@@ -4,12 +4,32 @@ export interface NavItemProps {
   iconActive: string;
   iconInactive: string;
   state: 'active' | 'inactive';
+  label?: string; 
 }
 
-export const NavItem: React.FC<NavItemProps> = ({ iconActive, iconInactive, state }) => {
+export const NavItem: React.FC<NavItemProps> = ({ iconActive, iconInactive, state, label }) => {
+  const isActive = state === 'active';
+  const iconColor = isActive ? 'text-primary-50' : 'text-neutral-600';
+
   return (
-    <div className={`flex items-center justify-center rounded-2xl w-11 h-11 ${state === 'active' ? 'bg-primary-600' : ''}`}>
-      <Icon icon={state === 'active' ? iconActive : iconInactive} altText="icon" size="medium" />
+    <div
+      className={`flex flex-col items-center justify-evenly rounded-2xl w-[50px] h-[50px] ${
+        isActive ? 'bg-primary-600' : 'bg-transparent'
+      }`}
+    >
+      <Icon
+        icon={isActive ? iconActive : iconInactive}
+        altText="icon"
+        size="small"
+      />
+
+      {label && (
+        <span
+          className={`font-medium text-subtitle ${iconColor}`}
+        >
+          {label}
+        </span>
+      )}
     </div>
   );
 };

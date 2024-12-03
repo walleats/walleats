@@ -17,15 +17,6 @@ export const Default: Story = {
   render: Template,
   args: {
     title: "Food",
-    image: images.foodLargeSqaured,
-  },
-};
-
-export const DarkText: Story = {
-  render: Template,
-  args: {
-    title: 'Some Plan',
-    image: images.foodLargeSqaured,
-    darkText: true,
+    image: images.burger,
   },
 };

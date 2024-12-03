@@ -10,4 +10,6 @@ export const images = {
   soy: `${basePath}/soy.jpeg`,
   garlic: `${basePath}/garlic.jpeg`,
   grilledSalmon: `${basePath}/grilledSalmon.webp`,
+  burger: `${basePath}/burger.jpg`,
+  vegetables: `${basePath}/vegetables.jpg`,
 } 

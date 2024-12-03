@@ -31,7 +31,7 @@ export const FoodCarousel: React.FC<FoodCarouselProps> = ({ items }) => {
 
         <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-black/70 to-transparent"></div>
 
-        <div className="absolute top-2 text-text-50 text-h3 font-medium pl-2 z-10">
+        <div className="absolute top-1 text-text-50 text-h4 font-medium pl-2 z-10">
           {items[currentIndex].title}
         </div>
 
