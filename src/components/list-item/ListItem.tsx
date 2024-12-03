@@ -6,6 +6,7 @@ export interface ListItemProps {
   title: string;
   subtitle?: string;
   submitIcon?: ReactNode;
+  showBorder?: boolean;
   onClick?: () => void;
 }
 
@@ -15,6 +16,7 @@ export const ListItem = ({
   title,
   subtitle,
   submitIcon,
+  showBorder = true,
   onClick,
 }: ListItemProps) => {
   return (
@@ -24,9 +26,9 @@ export const ListItem = ({
     >
       <div className="flex items-center space-x-4">
         <div
-          className={`flex items-center justify-center w-[50px] h-[50px] overflow-hidden border border-text-950 ${
-            imageShape === 'rounded' ? 'rounded-full' : 'rounded-md'
-          }`}
+          className={`flex items-center justify-center w-[50px] h-[50px] overflow-hidden ${
+            showBorder ? 'border border-text-950' : ''
+          } ${imageShape === 'rounded' ? 'rounded-full' : 'rounded-md'}`}
         >
           <div className="w-full h-full flex items-center justify-center">
             {icon}

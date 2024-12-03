@@ -24,6 +24,7 @@ export const IngredientsList: React.FC<IngredientsListProps> = ({
                 <ListItem
                     key={index}
                     {...item}
+                    showBorder={false}
                 />
             ))}
         </div>
