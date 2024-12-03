@@ -21,7 +21,7 @@ export const ListItem = ({
 }: ListItemProps) => {
   return (
     <div
-      className="flex items-center min-w-[300px] justify-between p-2 border bg-background-50 h-[70px] border-primary-500 rounded-md"
+      className="flex items-center min-w-[300px] justify-between p-2 border-b bg-background-50 h-[70px] border-neutral-500"
       onClick={onClick}
     >
       <div className="flex items-center gap-1">

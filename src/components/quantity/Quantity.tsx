@@ -8,8 +8,8 @@ export interface QuantityProps {
 
 export const Quantity: React.FC<QuantityProps> = ({ value, add, subtract, size = 'default', state = 'default' }) => {
   const sizeStyles = {
-    small: 'h-[44px]',
-    default: 'h-[60px]',
+    small: 'h-[36px]',
+    default: 'h-[47px]',
   };
 
   const baseStyle = 'flex items-center justify-between gap-2 bg-neutral-50 rounded-md p-1 w-[127px] border border-text-500';

@@ -8,7 +8,7 @@ import { foodPlans, navItems, offerItems } from "@/constants/mocks";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-background-50 min-h-screen w-full items-center py-2 px-[18px] gap-2 overflow-y-auto overflow-x-hidden">
+    <div className="flex flex-col bg-background-50 min-h-screen w-full items-center py-2 px-[18px] gap-3 overflow-y-auto overflow-x-hidden">
       <Top
         topBarProps={{
           title: "Home",
@@ -24,13 +24,13 @@ export default function Home() {
         <OptionCard title="Ingredients" image={images.vegetables} />
       </div>
 
-      <div className="flex flex-col justify-center px-6">
-        <div className="text-h3 text-text-950 font-medium">Today&apos;s Offers</div>
+      <div className="flex flex-col justify-center gap-2">
+        <div className="text-h4 text-text-950 font-bold">Today&apos;s Offers</div>
         <FoodCarousel items={offerItems} />
       </div>
 
-      <div className="flex flex-col justify-center px-6 mt-4 ml-[260px]">
-        <div className="text-h3 text-text-950 font-medium">Discover food plans</div>
+      <div className="flex flex-col justify-center gap-2 mt-4 ml-[260px]">
+        <div className="text-h4 text-text-950 font-bold">Discover food plans</div>
         <div className="flex overflow-x-auto gap-4 mt-2 pb-4">
           {foodPlans.map((foodPlan, index) => (
               <FoodPlanCard
